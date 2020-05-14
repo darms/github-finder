@@ -6,6 +6,7 @@ export class Search extends Component {
             <div>
                 <form className="form">
                     <input type="text" name="text" placeholder="Search Users..." />
+                    <input type="submit" balue="Search" className="btn btn-dark btn-block" />
                 </form>
             </div>
         )
