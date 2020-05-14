@@ -18,7 +18,6 @@ class App extends Component {
     const res = await axios.get('https://api.github.com/users')
 
     this.setState ({ users: res.data, loading: false});
-
   }
 
 
@@ -29,7 +28,7 @@ class App extends Component {
       <div className='App'>
       <Navbar /> 
       <div className= "container">
-      <Search />
+      <Search searchUsers={this.searchUsers} />
       <Users loading={this.state.loading} users={this.state.users} />         
       </div>
 
